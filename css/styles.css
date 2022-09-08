@@ -11407,6 +11407,7 @@ p.lead {
   font-size: 3rem;
 }
 
+
 section.resume-section {
   display: flex;
   align-items: center;
@@ -11433,3 +11434,5 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+
