@@ -572,6 +572,7 @@ progress {
 
 .list-inline-item {
   display: inline-block;
+  
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
@@ -11440,13 +11441,17 @@ section.resume-section .resume-section-content {
 
 .image {
   position: relative;
-  width: 400px;
-  height: 400px;
+  display: table;
+  width: 300px;
+  height: 300px;
+  
 }
 
 .image__img {
-  display: block ;
-  width: 100%;
+  object-fit:cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 7%;
 }
 
 .image__overlay {
@@ -11465,12 +11470,14 @@ section.resume-section .resume-section-content {
   transition: opacity 0.25s;
 }
 
+
 .image__overlay--blur {
   backdrop-filter: blur(7px);
 }
 
 .image__overlay--primary {
   background: #bd5d38;
+  border-radius: 7%;
 }
 
 .image__overlay > * {
@@ -11496,3 +11503,115 @@ section.resume-section .resume-section-content {
   margin-top: 0.25em;
 }
 
+
+
+div.img
+{
+  margin: 0px;
+  float: left;
+  text-align: center;
+}	
+div.img img
+{
+  display: inline;
+  margin: 0px;
+}
+
+div.desc
+{
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 2px;
+}
+
+
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.image-grid > img {
+  width: 400px;
+  height: 400px;
+  object-fit: fill;
+}
+
+.image-grid-col-2 {
+  grid-column: span 1;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+/* Anything under 1024px */
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 3;
+    --row-height: 100px;
+  }
+}
+
+
+
+.button {
+  display: flex;
+  overflow: hidden;
+  margin: 10px;
+  padding: 12px 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: all 150ms linear;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none !important;
+  text-transform: none;
+  text-transform: capitalize;
+  color: #fff;
+  border: 0 none;
+  border-radius: 10%;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 20px;
+  box-shadow: 2px 5px 10px #b02a37;
+}
+.button:hover {
+  transition: all 150ms linear;
+  opacity: 0.85;
+}
+.button:active {
+  transition: all 150ms linear;
+  opacity: 0.75;
+}
+.button:focus {
+  outline: 1px dotted #959595;
+  outline-offset: -4px;
+}
+
+.button.-salmon {
+  color: #bd5d38;
+  background: #ffffff ;
+}
+
+
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css')
