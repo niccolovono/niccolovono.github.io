@@ -31,8 +31,8 @@ Hi there! I'm Niccolò, a passionate bioinformatics researcher and developer. I 
 
 ## 🌐 Connect With Me
 - **Website/Portfolio:** [Coming Soon!]
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/niccolovono/)
-- **X:** [@Niccolovono](https://www.x.com/niccolovono)
+- **LinkedIn:** [Niccolò Vono](https://www.linkedin.com/in/niccolovono/)
+- **X:** [@niccolovono](https://www.x.com/niccolovono)
 
 ---
 
